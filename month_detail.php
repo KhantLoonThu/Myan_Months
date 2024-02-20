@@ -5,7 +5,7 @@ include_once './layouts/header.php';
 // $Months = getData();
 
 $Months = $months->getData();
-$monthId = intval($_GET['id']);
+$monthId = intval($_SESSION['id']);
 ?>
 
 <main class="main container-fluid">

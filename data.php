@@ -1,5 +1,5 @@
 <?php
-
+session_start();
 // function getData()
 // {
 //     // 1. Firstly get the data from json file
@@ -31,6 +31,7 @@ $months = new GetData("MyanmarMonths.json");
 // echo "<pre>";
 // print_r($months->getData());
 // echo "</pre>";
+
 
 ?>
 <?php ?>

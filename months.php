@@ -18,13 +18,16 @@ $Months = $months->getData();
             <?php foreach ($Months as $Month) { ?>
 
                 <div class="col-md-3 mb-3">
-                    <div class="card" id="<?php echo "{$Month["Id"]}" ?>">
+                    <div class="card">
                         <img src="<?php echo "{$Month['ImgUrl']}" ?>" alt="">
                         <div class="card-body">
                             <h5 class='myanmar-month-name'><?php echo "{$Month['MonthMm']}" ?></h5>
                             <h5><?php echo "{$Month['MonthEn']}" ?></h5>
+
+                            <!-- Change this button by using ajax 
+                        -->
                             <div class="mt-3">
-                                <a href="./month_detail.php?id=<?php echo $Month['Id'] ?>" class="btn btn-info readMoreButton">Read More</a>
+                                <a href="./month_detail.php" class="btn btn-info readMoreButton" id="<?php echo "{$Month["Id"]}" ?>">Read More</a>
                             </div>
                         </div>
                     </div>
@@ -34,6 +37,8 @@ $Months = $months->getData();
     </section>
 </main>
 
+<script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+<script src="./months.js"></script>
 <?php ?>
 
 <?php
