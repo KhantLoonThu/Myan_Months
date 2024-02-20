@@ -3,7 +3,8 @@
 include_once './data.php';
 include_once './layouts/header.php';
 
-$Months = getData();
+// $Months = getData();
+$Months = $months->getData();
 ?>
 
 <main class="main container-fluid">
